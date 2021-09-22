@@ -3,8 +3,8 @@ package br.com.zup.Exemplo1;
 public class TecnicosAdministrativos extends Funcionario{
         private String departamento;
 
-        public TecnicosAdministrativos(String nome, double salario, String ctps, String cpf, String departamento) {
-                super(nome, salario, ctps, cpf);
+        public TecnicosAdministrativos(String nome, String cpf, double salario, String ctps, String departamento) {
+                super(nome, cpf, salario, ctps);
                 this.departamento = departamento;
         }
 

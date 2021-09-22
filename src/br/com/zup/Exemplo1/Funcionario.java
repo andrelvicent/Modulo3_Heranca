@@ -1,16 +1,16 @@
 package br.com.zup.Exemplo1;
 
-public class Funcionario {
+public class Funcionario{
     private String nome;
+    private String cpf;
     private double salario;
     private String ctps;
-    private String cpf;
 
-    public Funcionario(String nome, double salario, String ctps, String cpf) {
+    public Funcionario(String nome, String cpf, double salario, String ctps) {
         this.nome = nome;
+        this.cpf = cpf;
         this.salario = salario;
         this.ctps = ctps;
-        this.cpf = cpf;
     }
 
     public String getNome() {
@@ -19,6 +19,14 @@ public class Funcionario {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public double getSalario() {
@@ -35,13 +43,5 @@ public class Funcionario {
 
     public void setCtps(String ctps) {
         this.ctps = ctps;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 }
