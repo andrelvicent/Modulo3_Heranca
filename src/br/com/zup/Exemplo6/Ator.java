@@ -1,24 +1,25 @@
 package br.com.zup.Exemplo6;
 
-public class Atores {
+public class Ator {
     private String nome;
     private String papel;
     private double salario;
+    private double imposto;
 
-    public Atores() {
+    public Ator() {
 
     }
 
-    public Atores(String nome) {
+    public Ator(String nome) {
         this.nome = nome;
     }
 
-    public Atores(String nome, double salario) {
+    public Ator(String nome, double salario) {
         this.nome = nome;
         this.salario = salario;
     }
 
-    public Atores(String nome, String papel, double salario) {
+    public Ator(String nome, String papel, double salario) {
         this.nome = nome;
         this.papel = papel;
         this.salario = salario;
@@ -48,4 +49,16 @@ public class Atores {
         this.salario = salario;
     }
 
+    public double calcularSalario(){
+        double salarioLiquido = this.salario - this.imposto;
+        return salarioLiquido;
+    }
+
+    public double getImposto() {
+        return imposto;
+    }
+
+    public void setImposto(double imposto) {
+        this.imposto = imposto;
+    }
 }
