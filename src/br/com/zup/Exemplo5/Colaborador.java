@@ -5,6 +5,19 @@ public class Colaborador {
     private double imposto;
     private double salario;
 
+    public Colaborador(double imposto, double salario) {
+        this.imposto = imposto;
+        this.salario = salario;
+    }
+
+    public Colaborador(double imposto) {
+        this.imposto = imposto;
+    }
+
+    public Colaborador(String nome) {
+        this.nome = nome;
+    }
+
     public Colaborador(String nome, double imposto, double salario) {
         this.nome = nome;
         this.imposto = imposto;

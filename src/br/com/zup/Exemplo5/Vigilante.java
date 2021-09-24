@@ -5,7 +5,7 @@ public class Vigilante extends Colaborador{
     private double ajudaDeCusto;
 
     public Vigilante(String nome, double imposto, double salario, double adicionalNoturno, double ajudaDeCusto) {
-        super(nome, imposto, salario);
+        super(nome, salario, imposto);
         this.adicionalNoturno = adicionalNoturno;
         this.ajudaDeCusto = ajudaDeCusto;
     }
