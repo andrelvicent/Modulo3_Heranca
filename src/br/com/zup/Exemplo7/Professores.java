@@ -15,4 +15,18 @@ public class Professores extends Funcionario{
     public void setDisciplina(String disciplina) {
         this.disciplina = disciplina;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder retornoDoMetodo = new StringBuilder();
+        retornoDoMetodo.append("Nome: " + getNome());
+        retornoDoMetodo.append("\t Senioridade: " + getSenioridade());
+        retornoDoMetodo.append("\t Salario: " + getSalario());
+        retornoDoMetodo.append("\t Disciplina: " +getDisciplina());
+        return retornoDoMetodo.toString();
+
+
+      //  String retorno = "Nome: " +this.getNome() + " \t Senioridade: " +this.getSenioridade() + " \t Disciplina: " +this.getDisciplina();
+      //  return retorno;
+    }
 }

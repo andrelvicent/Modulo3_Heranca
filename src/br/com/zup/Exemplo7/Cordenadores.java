@@ -17,11 +17,21 @@ public class Cordenadores extends Funcionario{
 
     public void exibirProfessoresSupervisionados(){
         for (Professores referencia:professoresSupervisionados) {
-            System.out.println("O nome do professor é: " +referencia.getNome());
+            System.out.println(referencia);
         }
     }
 
-    public void removerProfessor(){
+    public List<Professores> getProfessoresSupervisionados() {
+        return professoresSupervisionados;
+    }
 
+    @Override
+    public String toString() {
+        StringBuilder retornarDados = new StringBuilder();
+        retornarDados.append("Nome: " + getNome());
+        retornarDados.append("\n Senioridade: " +getSenioridade());
+        retornarDados.append("\n Salario: R$ " +getSalario());
+        retornarDados.append("\n Professores supervisionados: " +getProfessoresSupervisionados());
+        return retornarDados.toString();
     }
 }

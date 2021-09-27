@@ -8,16 +8,10 @@ public class Main {
 
         Cordenadores cordenador = new Cordenadores("Barbara", "Senior", 700000000);
 
-        System.out.println(cordenador.getNome());
-        System.out.println(cordenador.getSenioridade());
-        System.out.println(cordenador.getSalario());
-
-        System.out.println("--------------------");
         cordenador.adicionarProfessor(professor);
         cordenador.adicionarProfessor(professor2);
         cordenador.adicionarProfessor(professor3);
 
-        cordenador.exibirProfessoresSupervisionados();
-
+        System.out.println(cordenador);
     }
 }
