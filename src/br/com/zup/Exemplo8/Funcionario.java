@@ -7,9 +7,6 @@ public class Funcionario {
     private String orgaoDeLotacao;
     private double salario;
 
-    public Funcionario() {
-
-    }
 
     public Funcionario(String nome, String cpf, String numeroDeRegistro, String orgaoDeLotacao, double salario) {
         this.nome = nome;

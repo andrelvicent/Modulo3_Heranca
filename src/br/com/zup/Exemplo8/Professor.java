@@ -6,9 +6,6 @@ public class Professor extends Funcionario{
     private int qtd_alunos;
     private int qtd_turmas;
 
-    public Professor() {
-
-    }
 
     public Professor(String nome, String cpf, String numeroDeRegistro, String orgaoDeLotacao, double salario, String nivelDeGraduacao, String disciplinaMinistrada, int qtd_alunos, int qtd_turmas) {
         super(nome, cpf, numeroDeRegistro, orgaoDeLotacao, salario);

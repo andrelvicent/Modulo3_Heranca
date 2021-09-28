@@ -6,9 +6,7 @@ import java.util.List;
 public class Coordenador extends Funcionario{
     private List <Professor> professoresSupervisionados = new ArrayList<>();
 
-    public Coordenador() {
 
-    }
 
     public Coordenador(String nome, String cpf, String numeroDeRegistro, String orgaoDeLotacao, double salario) {
         super(nome, cpf, numeroDeRegistro, orgaoDeLotacao, salario);
