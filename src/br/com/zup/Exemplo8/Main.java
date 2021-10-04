@@ -14,10 +14,11 @@ public class Main {
         Professor prof = new Professor("André", "555555521-55", "2365321", "Filial de Uberlândia", 500, "Mestrado", "Java", 100, 2);
         Professor prof2 = new Professor("Vinicius", "66666666621-55", "2365328", "Filial de Uberlândia", 500, "Graduacao", "Objective C", 200, 4);
         Coordenador coordenador = new Coordenador("Barbara", "012345678-99", "987654321", "Matriz", 1000);
+        Vigilante vigilante = new Vigilante("André", "5454654", "214656", "Uberlandia", 9000, 500);
 
-        System.out.println(prof2);
-        prof2.aumentarSalario();
-        System.out.println(prof2);
+        System.out.println(vigilante);
+        vigilante.aumentarSalario();
+        System.out.println(vigilante);
 
     }
 

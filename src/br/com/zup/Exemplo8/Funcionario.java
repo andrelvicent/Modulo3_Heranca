@@ -1,6 +1,6 @@
 package br.com.zup.Exemplo8;
 
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private String numeroDeRegistro;
@@ -56,10 +56,7 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public void aumentarSalario(){
-        double novoSalario = (0.1 * salario) + salario;
-        this.salario = novoSalario;
-    }
+    public abstract void aumentarSalario();
 
     @Override
     public String toString() {

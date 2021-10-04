@@ -1,6 +1,6 @@
 package br.com.zup.Exemplo6;
 
-public class Ator {
+public abstract class Ator {
     private String nome;
     private String papel;
     private double salario;

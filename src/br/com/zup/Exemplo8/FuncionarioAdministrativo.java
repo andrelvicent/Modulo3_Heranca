@@ -28,6 +28,12 @@ public class FuncionarioAdministrativo extends Funcionario{
     }
 
     @Override
+    public void aumentarSalario(){
+        double novoSalario = (0.1 * getSalario()) + getSalario();
+        setSalario(novoSalario);
+    }
+
+    @Override
     public String toString() {
         return "FuncionarioAdministrativo{" +
                 "funcaoAdministrativa='" + funcaoAdministrativa + '\'' +

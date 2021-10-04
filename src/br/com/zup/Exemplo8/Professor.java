@@ -48,6 +48,12 @@ public class Professor extends Funcionario{
     }
 
     @Override
+    public void aumentarSalario(){
+            double novoSalario = (0.07 * getSalario()) + getSalario();
+            setSalario(novoSalario);
+    }
+
+    @Override
     public String toString() {
         StringBuilder retorno = new StringBuilder();
 
