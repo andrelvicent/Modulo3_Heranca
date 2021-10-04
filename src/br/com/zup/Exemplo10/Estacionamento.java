@@ -29,6 +29,7 @@ public class Estacionamento implements ModeloEstacionamento{
     public void mostrarLista() {
         for (Carro referencia : carros) {
             System.out.println(referencia);
+
         }
     }
 
