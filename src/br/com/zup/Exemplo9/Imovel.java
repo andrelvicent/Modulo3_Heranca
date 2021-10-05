@@ -52,6 +52,9 @@ public class Imovel {
         moradores.add(novoMorador);
     }
 
+    public void setMoradores(List<Morador> moradores) {
+        this.moradores = moradores;
+    }
 
     @Override
     public String toString() {

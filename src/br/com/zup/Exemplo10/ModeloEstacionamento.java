@@ -1,9 +1,7 @@
 package br.com.zup.Exemplo10;
 
 public interface ModeloEstacionamento {
-    // Implementar adicionar carro
-    // Remover carro
-    // Consultar se o carro está no estacionamento
+    // Criar um contrato na qual o estacionamento deverá seguir
 
     public abstract void adicionarCarro(Carro novoCarro);
     public abstract void removerCarro(String placa);

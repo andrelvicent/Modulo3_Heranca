@@ -10,6 +10,13 @@ import java.util.List;
 public class Estacionamento implements ModeloEstacionamento{
     private List<Carro> carros = new ArrayList<>();
 
+    public void mostrarCarros() {
+        for (Carro referencia : carros) {
+            System.out.println(referencia);
+
+        }
+    }
+
     @Override
     public void adicionarCarro(Carro novoCarro){
         carros.add(novoCarro);
@@ -24,13 +31,6 @@ public class Estacionamento implements ModeloEstacionamento{
             }
         }
 
-    }
-
-    public void mostrarLista() {
-        for (Carro referencia : carros) {
-            System.out.println(referencia);
-
-        }
     }
 
     @Override
