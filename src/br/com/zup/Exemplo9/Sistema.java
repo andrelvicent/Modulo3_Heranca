@@ -20,6 +20,7 @@ public class Sistema {
     private static boolean validarCpfExistente(Imobiliaria imobiliaria, Morador morador){
         // Percorrer minha lista de imóveis
         String cpf = morador.getCpf();
+
         for (Imovel percorrerImoveis : imobiliaria.getImoveis()) {
             // Percorrer todas as listas dos moradores
             for (Morador percorrerMoradores : percorrerImoveis.getMoradores()) {
