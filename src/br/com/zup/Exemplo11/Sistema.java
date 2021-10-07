@@ -20,6 +20,10 @@ public class Sistema {
         for (int i = 0; i < turnos.size(); i++) {
             System.out.println(turnos.get(i));
         }
+        // Outra forma
+        for(Turno turnoReferencia : turnos){
+            System.out.println(turnoReferencia);
+        }
     }
 
    public static Aluno cadastrarAluno() throws Exception{
